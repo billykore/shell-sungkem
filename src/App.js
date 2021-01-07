@@ -1,14 +1,13 @@
 import React from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Nav from './components/Nav';
-import Maintenance from './components/Maintenance';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Navbar } from './components';
+import GlobalStyle from './globalStyle';
 
 export default function App() {
   return (
-    <div className="App">
-      <Nav />
-      <Maintenance />
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Navbar />
+    </Router>
   );
 }
