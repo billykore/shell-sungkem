@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Navbar } from './components';
 import GlobalStyle from './globalStyle';
+import Navbar from './components/Navbar';
 
 export default function App() {
   return (
@@ -9,5 +9,5 @@ export default function App() {
       <GlobalStyle />
       <Navbar />
     </Router>
-  );
+  )
 }
