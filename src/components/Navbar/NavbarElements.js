@@ -31,7 +31,7 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled(LinkR)`
   font-family: 'Staatliches', cursive;
-  color: #fff;
+  color: #d6c300;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.8rem;

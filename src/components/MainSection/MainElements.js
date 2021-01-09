@@ -56,7 +56,7 @@ export const MainH1 = styled.h1`
   color: #0c0c0c;
   font-size: 48px;
   text-align: center;
-  font-weight: 400;
+  font-weight: 700;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -73,7 +73,7 @@ export const MainP = styled.p`
   font-size: 24px;
   text-align: center;
   max-width: 600px;
-  font-weight: 300; 
+  font-weight: 400; 
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
