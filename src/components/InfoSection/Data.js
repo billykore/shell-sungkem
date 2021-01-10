@@ -14,7 +14,7 @@ export const homeObjOne = {
   lightTextDesc: true,
   topLine: 'Smart Energy Management',
   headline: 'Platform manajemen energi untuk pelaku UKM dan UMKM',
-  description: 'Pelaku UMKM mendapat sebuah produk yang dapat meminitor penggunaan energi sehingga lebih efisien, yang berakibat pada pengurangan biaya produksi dan mengurangi emisi gas karbon.',
+  description: 'Pelaku UMKM mendapat sebuah produk yang dapat memonitor penggunaan energi sehingga lebih efisien, yang berakibat pada pengurangan biaya produksi dan mengurangi emisi gas karbon.',
   buttonLabel: 'Selengkapnya',
   imgStart: false,
   img: svg5,
