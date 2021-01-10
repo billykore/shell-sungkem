@@ -21,7 +21,17 @@ export default function MainSection() {
           One Stop UMKM Solution
         </MainP>
         <MainBtnWrapper>
-          <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
+          <Button
+            to="signup"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            primary="true"
+            dark="true"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}>
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </MainBtnWrapper>
