@@ -46,8 +46,12 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
   max-width: 540px;
-  padding-bottom: 0;
+  padding-top: 0;
   padding-bottom: 60px;
+
+  @media screen and (max-width: 480px) {
+    padding-right: 20px
+  }
 `;
 
 export const TopLine = styled.p`
