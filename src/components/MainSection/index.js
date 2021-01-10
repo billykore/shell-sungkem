@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MainContainer, MainBg, ImageBg, MainContent, MainH1, MainP, MainBtnWrapper, ArrowForward, ArrowRight } from './MainElements';
 import { Button } from "../../globalStyle";
-// import backgroundImage from '../../assets/images/Meeting.png';
+import backgroundImage from '../../assets/images/jpg1.jpg';
 
 export default function MainSection() {
   const [hover, setHover] = useState(false);
@@ -13,7 +13,7 @@ export default function MainSection() {
   return (
     <MainContainer id="home">
       <MainBg>
-        {/* <ImageBg src={backgroundImage} /> */}
+        <ImageBg src={backgroundImage} />
       </MainBg>
       <MainContent>
         <MainH1>Smart Energy Management for UMKM</MainH1>
@@ -25,8 +25,8 @@ export default function MainSection() {
             to="signup"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            primary="true"
-            dark="true"
+            primary={false}
+            dark={false}
             smooth={true}
             duration={500}
             spy={true}
