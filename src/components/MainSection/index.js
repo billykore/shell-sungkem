@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MainContainer, MainBg, ImageBg, MainContent, MainH1, MainP, MainBtnWrapper, ArrowForward, ArrowRight } from './MainElements';
-import { Button } from "../../globalStyle";
+import { Button2 } from "../../globalStyle";
 import backgroundImage from '../../assets/images/jpg1.jpg';
 
 export default function MainSection() {
@@ -21,7 +21,7 @@ export default function MainSection() {
           One Stop UMKM Solution
         </MainP>
         <MainBtnWrapper>
-          <Button
+          <Button2
             to="signup"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
@@ -33,7 +33,7 @@ export default function MainSection() {
             exact="true"
             offset={-80}>
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </Button2>
         </MainBtnWrapper>
       </MainContent>
     </MainContainer>

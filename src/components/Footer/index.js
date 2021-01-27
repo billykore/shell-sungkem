@@ -9,15 +9,15 @@ export default function Footer() {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="#">Help</FooterLink>
-              <FooterLink to="#">Send feedback</FooterLink>
-              <FooterLink to="#">Terms of Service</FooterLink>
+              <FooterLink to="/404">Help</FooterLink>
+              <FooterLink to="/404">Send feedback</FooterLink>
+              <FooterLink to="/404">Terms of Service</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Sosial Media</FooterLinkTitle>
-              <FooterLink to="#">Facebook</FooterLink>
-              <FooterLink to="#">Instagram</FooterLink>
-              <FooterLink to="#">Youtube</FooterLink>
+              <FooterLink to="/404">Facebook</FooterLink>
+              <FooterLink to="/404">Instagram</FooterLink>
+              <FooterLink to="/404">Youtube</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
