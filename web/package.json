@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.3.14",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.5.3",
+    "graphql": "^15.5.0",
     "netlify-cli": "^2.71.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
@@ -19,10 +21,10 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "../node_modules/.bin/react-scripts start",
-    "build": "../node_modules/.bin/react-scripts build",
-    "test": "../node_modules/.bin/react-scripts test",
-    "eject": "../node_modules/.bin/react-scripts eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

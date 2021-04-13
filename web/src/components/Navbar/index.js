@@ -71,7 +71,7 @@ export default function Navbar({ toggle }) {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/404">Sign In</NavBtnLink>
+            <NavBtnLink to="/signin">Sign In</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

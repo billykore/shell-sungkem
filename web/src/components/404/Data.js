@@ -5,8 +5,8 @@ const lightBg = true;
 
 export const Data = {
   lightBg: lightBg,
-  lightText: lightBg ? false : true,
-  lightTextDesc: lightBg ? false : true,
+  lightText: !lightBg,
+  lightTextDesc: !lightBg,
   topLine: 'Page Not Found',
   headline: 'Oops!',
   description: `The page you are looking for doesn't exist or an other error occurred.`,
@@ -14,7 +14,7 @@ export const Data = {
   imgStart: false,
   img: png2,
   alt: '404',
-  dark: lightBg ? false : true,
+  dark: !lightBg,
   primary: false,
-  darkText: lightBg ? true : false
+  darkText: lightBg
 }

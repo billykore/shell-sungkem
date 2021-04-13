@@ -25,11 +25,11 @@ export default function MainSection() {
             to="signup"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            primary={false}
-            dark={false}
-            smooth={true}
+            primary="false"
+            dark="false"
+            smooth="true"
             duration={500}
-            spy={true}
+            spy="true"
             exact="true"
             offset={-80}>
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
