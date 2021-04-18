@@ -42,6 +42,7 @@ export const homeObjTwo = {
 }
 
 export const homeObjThree = {
+  uri: '/signup',
   id: 'signup',
   lightBg: true,
   lightText: false,

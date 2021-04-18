@@ -9,7 +9,8 @@ import {
   FormLabel,
   FormWrap,
   Icon,
-} from "./SigninElemets";
+  RegisterLink
+} from "../Form/FormElements";
 
 export default function SignIn() {
   return (
@@ -18,7 +19,7 @@ export default function SignIn() {
         <FormContent>
           <Form>
             <Icon to='/'>Sungkem</Icon>
-            <FormH1>Sign in to your account</FormH1>
+            <FormH1>Belum punya akun? <RegisterLink to="/signup">Register</RegisterLink></FormH1>
             <FormLabel>Email</FormLabel>
             <FormInput type="email"/>
             <FormLabel>Password</FormLabel>

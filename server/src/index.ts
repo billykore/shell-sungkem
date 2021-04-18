@@ -7,6 +7,7 @@ import {buildSchema} from "type-graphql";
 import {UserResolver} from "./resolvers/UserResolver";
 import cookieParser from 'cookie-parser';
 import jwt from "jsonwebtoken";
+import cors from 'cors';
 import {User} from "./entity/User";
 import {sendRefreshToken} from "./auth/sendRefreshToken";
 import {createAccessToken, createRefreshToken} from "./auth/token";
@@ -14,6 +15,7 @@ import {createAccessToken, createRefreshToken} from "./auth/token";
 const main = async () => {
   const app = express()
 
+  app.use(cors({origin: 'http://localhost:3000', credentials: true}))
   app.use(cookieParser())
 
   app.post('/', async (req, res) => {
@@ -44,7 +46,6 @@ const main = async () => {
       return res.send({ok: true, accessToken: createAccessToken(user)})
     })
 
-
   // Apollo server
   await createConnection()
 
@@ -55,7 +56,7 @@ const main = async () => {
     context: ({req, res}) => ({req, res})
   })
 
-  server.applyMiddleware({app})
+  server.applyMiddleware({app, cors: false})
 
   app.listen(5000, () => console.log('Server berjalan pada http://localhost:5000' + server.graphqlPath))
 }

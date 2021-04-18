@@ -3,9 +3,14 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import {ApolloClient, ApolloProvider, HttpLink, InMemoryCache} from '@apollo/client';
 
-const client = new ApolloClient({
+const httpLink = new HttpLink({
   uri: 'http://localhost:5000/graphql',
+  credentials: 'include'
+})
+
+const client = new ApolloClient({
   cache: new InMemoryCache(),
+  link: httpLink
 })
 
 ReactDOM.render(

@@ -9,13 +9,12 @@ export const Container = styled.div`
   top: 0;
   z-index: 0;
   overflow: hidden;
-  background: linear-gradient(108deg,
-  rgb(167, 151, 1) 0%,
-  rgb(214, 195, 0) 100%,)
+  background: #eee; 
 `
 
 export const FormWrap = styled.div`
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,9 +70,13 @@ export const FormH1 = styled.h1`
   margin-top: 20px;
   margin-bottom: 20px;
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   text-align: center;
+`
+
+export const RegisterLink = styled(Link)`
+  color: cadetblue;
 `
 
 export const FormLabel = styled.label`

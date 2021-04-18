@@ -2,7 +2,7 @@ import React from 'react'
 import { Button1 } from '../../globalStyle';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img } from './InfoElements';
 
-export default function InfoSection({ lightBg, id, imgStart, topLine, lightText, darkText, headline, description, buttonLabel, img, alt, primary, dark, dark2 }) {
+export default function InfoSection({ lightBg, id, imgStart, topLine, lightText, darkText, headline, description, buttonLabel, img, alt, primary, dark, dark2, uri }) {
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -15,7 +15,7 @@ export default function InfoSection({ lightBg, id, imgStart, topLine, lightText,
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <Button1
-                    to="/404"
+                    to={uri}
                     smooth={true}
                     duration={500}
                     spy={true}
